@@ -127,7 +127,7 @@ function ledOn (sender, text) {
       
 
       // publish a message to a topic
-      client.publish(mqtt_topic, 'on', function() {
+      client.publish(mqtt_topic, 'relay1_on', function() {
           console.log("Message is published");
           client.end(); // Close the connection when published
       });
@@ -174,7 +174,7 @@ function ledOff (sender, text) {
       
 
       // publish a message to a topic
-      client.publish(mqtt_topic, 'off', function() {
+      client.publish(mqtt_topic, 'relay1_ff', function() {
           console.log("Message is published");
           client.end(); // Close the connection when published
       });
