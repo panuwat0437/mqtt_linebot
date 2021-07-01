@@ -16,7 +16,7 @@ var mqtt_topic = '/ESP/LED';
 
 // MQTT Config
 var options = {
-    port: 30174,
+    port: 10174,
     host: 'mqtt://soldier.cloudmqtt.com',
     clientId: 'mqttjs_' + Math.random().toString(16).substr(2, 8),
     username: 'brdhfcif',
